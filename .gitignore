@@ -1,0 +1,49 @@
+build/
+dist/
+wheels/
+*.eeg-info
+
+# Ambientes virtuais
+.venv/
+env/
+venv/
+ENV/
+
+# Variáveis de ambiente e segredos
+.env
+.env.local
+.env.*.local
+config/.env
+config/*.env
+*.key
+*.pem
+credentials.json
+
+# Python bytecode e cache
+__pycache__/
+*.py[oc]
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Dados temporários e ficheiros gerados pelo pipeline
+data/*.parquet
+data/*.json
+logs/
+airflow.cfg
+
+# Docker
+.DS_Store
+
+/data
+/config
+
+*.bak
+*.backup
+
+.docker/
+docker-compose.override.yml
+.dockerignore
+postgres-db-volume/
